@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Wu_Athena_EC.props" />
+</Project>

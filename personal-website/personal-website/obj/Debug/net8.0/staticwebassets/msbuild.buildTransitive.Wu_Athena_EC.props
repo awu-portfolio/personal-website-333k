@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Wu_Athena_EC.props" />
+</Project>

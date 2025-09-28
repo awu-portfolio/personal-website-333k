@@ -1,0 +1,22 @@
+﻿@model List<Event>
+
+@{
+    ViewData["Title"] = "Timeline";
+}
+
+@foreach (var eventItem in Model)
+{
+    // Display each event in a card or however you want
+    <div class="d-flex flex-column align-items-center">
+        <div class="card text-white bg-dark mb-3 event-card" style="max-width: 20rem;">
+            <div class="card-header">@eventItem.Date.ToString("MMMM yyyy")</div>
+            <div class="card-body">
+                <h4 class="card-title">@eventItem.Title</h4>
+                <p class="card-text">@eventItem.Description</p>
+                <img class="image-card" src="~/images/@eventItem.ImageUrl">
+            </div>
+        </div>
+    </div>
+
+
+}

@@ -1,0 +1,20 @@
+﻿@model List<Photo>
+
+@{
+    ViewData["Title"] = "Photography";
+}
+
+@foreach (var photoItem in Model)
+{
+    // Display each event in a card or however you want
+    <div class="d-flex flex-column align-items-center">
+        <div class="card text-white bg-dark mb-3 event-card" style="max-width: 20rem;">
+            <div class="card-body">
+                <h4 class="card-title">@photoItem.Title</h4>
+                <img class="image-card" src="~/images/@photoItem.PhotoUrl">
+            </div>
+        </div>
+    </div>
+
+
+}
